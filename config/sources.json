@@ -1,0 +1,56 @@
+{
+  "sources": {
+    "sample": {
+      "enabled": false,
+      "priority": 99,
+      "name": "Sample Source",
+      "description": "Sample plugin for testing and development",
+      "config": {
+        "base_url": "https://example.com",
+        "rate_limit": 1.0,
+        "user_agent": "AniPlux/0.1.0",
+        "timeout": 30
+      }
+    },
+
+    "hianime_plugin": {
+      "enabled": true,
+      "priority": 1,
+      "name": "HiAnime",
+      "description": "Plugin for scraping anime from HiAnime.to",
+      "config": {
+        "base_url": "https://hianime.to",
+        "rate_limit": 2.0,
+        "user_agent": "AniPlux/0.1.0",
+        "timeout": 30,
+        "adblock_extension_path": "",
+        "selenium_headless": false,
+        "selenium_max_attempts": 60
+      }
+    },
+
+    "animetsu_plugin": {
+      "enabled": true,
+      "priority": 2,
+      "name": "Animetsu",
+      "description": "Plugin for scraping anime from Animetsu.to",
+      "config": {
+        "timeout": 30,
+        "max_retries": 3,
+        "rate_limit": 1.0,
+        "search_limit": 400,
+        "quality_preference": "1080p",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+        "use_aria2c": true,
+        "use_yt_dlp": true
+      }
+    }
+  },
+
+  "global_config": {
+    "enable_all_by_default": false,
+    "auto_discover": true,
+    "plugin_timeout": 30,
+    "max_concurrent_plugins": 5
+  }
+}

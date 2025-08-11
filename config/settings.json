@@ -1,0 +1,35 @@
+{
+  "settings": {
+    "download_directory": "./downloads",
+    "default_quality": "720p",
+    "concurrent_downloads": 3,
+    "timeout": 30,
+    "max_retries": 3,
+    "chunk_size": 8192,
+    "use_aria2c": true,
+    "aria2c_path": null,
+    "aria2c_connections": 16,
+    "aria2c_split": 16,
+    "aria2c_min_split_size": "1M"
+  },
+  "ui": {
+    "show_banner": true,
+    "color_theme": "default",
+    "progress_style": "bar",
+    "table_style": "rounded",
+    "panel_style": "rounded",
+    "animation_speed": "normal"
+  },
+  "search": {
+    "max_results_per_source": 200,
+    "search_timeout": 10,
+    "enable_fuzzy_search": true,
+    "min_query_length": 2
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "aniplux.log",
+    "max_size": "10MB",
+    "backup_count": 3
+  }
+}
