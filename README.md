@@ -100,6 +100,7 @@ sudo yum install aria2
 #### HiAnime Plugin
 The HiAnime plugin may require additional setup for optimal performance:
 
+##### Method 1
 - **AdBlock Extension** (Recommended): For better scraping reliability, you can configure an AdBlock extension path in the HiAnime plugin settings. This helps bypass ads and improves extraction success rates.
 - **Selenium WebDriver** (Optional): For JavaScript-heavy content, install Selenium support:
   ```bash
@@ -114,6 +115,12 @@ aniplux sources config hianime_plugin
 # Or manually set the AdBlock extension path
 aniplux config set sources.hianime_plugin.config.adblock_extension_path "/path/to/adblock/extension"
 ```
+
+##### Method 2
+Download the adblock from this link : https://www.dropbox.com/scl/fo/yx2pkebuk3mkcr2wqux12/AO36V6g84LQySif3d6m6Jls?rlkey=0j0340gk63ketast502jm298s&st=v8bq5uvv&dl=0
+and put the folder in your C Drive downloads folder and then update the sources.json file, it should look something like this
+
+<img width="774" height="553" alt="image" src="https://github.com/user-attachments/assets/a4feb6c3-6a0e-4db1-a6cc-e598ccc5fe2e" />
 
 ---
 
